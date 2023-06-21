@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background: #E9E9E9;
+}
+
+.row{
+    display: flex;
+    margin: 10px 6% 0;
+    gap: 10px;
+}
+
+.col_1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.box{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.tabs, .categories{
+    padding: 10px;
+
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.tab.active{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    background: linear-gradient(90deg, #0BB2C6, #600783);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.categories{
+    margin-top: 10px;
+    color: #333;
+}
+
+.box_name{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+/*.category{
+    display: flex;
+    flex-direction: column;
+
+}*/
+
+.category p, .post_category{
+    background-color: #d8d8d8;
+    margin: 10px 0px ;
+    color: #333;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px
+}
+
+/*col-2*/
+
+.col_2{
+    flex-basis: 50%;
+    /*background-color: #fff;*/
+}
+
+.post_tabs{
+    margin-top: 20px;
+}
+
+.post_tab{
+    color: #333;
+    font-weight: 800;
+    cursor: pointer;
+    /*margin-top: 20px;*/
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.post{
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.flex_bwn{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*input{
+    margin-left: 40px;
+    padding: 12px;
+    border: 1px;
+    width: 24rem;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}*/
+.comment{
+    width: 400px ;
+}
+
+/*col-3*/
+
+.col_3{
+    flex-basis: 25%;
+}
+
+.col_3 .flex{
+    margin-top: 20px;
+    gap: 20px
+}
+
+.col_3 .flex i{
+    font-size: 28px;
+}
+
+.profile_desc{
+    margin: 12px 0;
+}
+
+.profile_stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px){
+    .row{
+        flex-direction: column;
+    }
+
+    .col_1, .col_2, .col_3{
+        flex-basis: 100%;
+    }
+}

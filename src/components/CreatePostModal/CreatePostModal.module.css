@@ -1,0 +1,49 @@
+.container{
+    width: 60%;
+    /*height: 80%;*/
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+form textarea{
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0BB2C6, #600783);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form textarea:focus{
+    outline: none;
+}
